@@ -1,0 +1,134 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    animation: slide-in 2s ease-out forwards;
+}
+
+@keyframes slide-in{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero p{
+    font-size: 1.2rem;
+}
+
+.gozo{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.gozo img{
+    width:100%;
+    height: auto;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-top: 50px;
+}
+
+.comino img{
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: -4px;
+}
+
+.background1{
+    margin-top: -25px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.gozo h3, h1{
+    margin-top: 50px;
+}
+
+.gozo p{
+    margin-top: 10px;
+}
+
+.background2{
+    background-color: black;
+    padding: 20px;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+}
+
+.comino{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.comino h3, h1{
+    margin-top: 50px;
+}
+
+.comino p{
+    margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        margin-top: 100px;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .gozo, .comino {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .gozo img, .comino img {
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .background1 {
+        padding: 15px;
+        border-radius: 15px;
+        margin-bottom: 50px;
+    }
+
+    .background2{
+        padding: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px; 
+        margin-bottom: 50px;  
+    }
+
+    .gozo h3, .gozo h1, .comino h3, .comino h1 {
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    .gozo p, .comino p {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 0.8rem; 
+    }
+
+}
+
